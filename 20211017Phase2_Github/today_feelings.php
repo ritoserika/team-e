@@ -47,14 +47,13 @@ if ($status == false) {
   <h1>今日のあなたにぴったりのYoutuberを提案いたします</h1>
   <fieldset>
     <legend>Today's Feelings（一覧画面）</legend>
-    <a href="todo_input.php">メイクをしたい</a>
-    <a href="todo_logout.php">笑いたい</a>
-    <a href="todo_logout.php">嫌なことをわすれたい</a>
-    <a href="todo_logout.php">楽しい気分になりたい</a>
+    <a href="">メイクをしたい</a>
+    <a href="wanna-fun.php">笑いたい</a>
+    <a href="">眠れない</a>
+    <a href="">楽しい気分になりたい</a>
   <div>
-    <a href="wanna-eat.php">おいしいものをたべたい</a>
-    <a href="wanna-eat.php">泣きたい気分</a>
-    <a href="wanna-eat.php">旅行に行きたい気分</a>
+    <a href="wana-eat.php">おいしいものをたべたい</a>
+    <a href="wana-training">トレーニングした気分</a>
   </div>
     <table>
       <tbody>

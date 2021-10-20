@@ -7,7 +7,7 @@ if($random_number==1){
 $result='<a href="https://www.youtube.com/channel/UCZf__ehlCEBPop-_sldpBUQ">ヒカキンTV</a><div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yoZcU7hpTHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
 }elseif($random_number==2){
-    $result='中吉';
+    $result='<a href="';
 }
 else if ($random_number==3){
     $result='小吉';
