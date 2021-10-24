@@ -54,6 +54,10 @@ if ($status == false) {
   <div>
     <a href="wana-eat.php">おいしいものをたべたい</a>
     <a href="wanna-training.php">トレーニングした気分</a>
+    <a href="">若い人向け</a>
+    <a href="">男性</a>
+    <a href="">女性</a>
+
   </div>
     <table>
       <tbody>
