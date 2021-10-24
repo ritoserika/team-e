@@ -53,7 +53,7 @@ if ($status == false) {
     <a href="">楽しい気分になりたい</a>
   <div>
     <a href="wana-eat.php">おいしいものをたべたい</a>
-    <a href="wana-training">トレーニングした気分</a>
+    <a href="wanna-training.php">トレーニングした気分</a>
   </div>
     <table>
       <tbody>
