@@ -54,8 +54,8 @@ class TweetController extends Controller
     {
         // バリデーション
        $validator = Validator::make($request->all(), [
-         'チャンネル名' => 'required | max:191',
-         '感想' => 'required',
+         'tweet' => 'required | max:191',
+         'description' => 'required',
        ]);
        // バリデーション:エラー
        if ($validator->fails()) {
