@@ -1,5 +1,16 @@
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('トレーニングしたい') }}
+        </h2>
+    </x-slot>
+
+<div class="py-12">
+     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="p-6 bg-white border-b border-gray-200">
 <?php
-$random_number = rand(1,5);
+ $random_number = rand(1,5);
 
 //乱数の値で条件分岐
 
@@ -25,11 +36,10 @@ else if ($random_number==5){
     $result='<a href="https://www.youtube.com/c/YonsenToshin">JINSLIFE</a><div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/6Giso8rBgoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
 }
-
 ?>
 
 <!DOCTYPE html>
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta http-variant_eqv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +49,11 @@ else if ($random_number==5){
   <body>
   <h1>今日、あなたにおすすめするのは<?=$result?></h1>
   <p>気に入りましたか？</p>
-  <button><a href="favorite_register.php">お気に入り登録</a></button>
-  </body>
+  <button> 
+      <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')">
+            {{ __('お気に入り') }}
+    　</x-nav-link>
+　</button>
+  </body<!DOCTYPE html>
 </html>
+</x-app-layout>
