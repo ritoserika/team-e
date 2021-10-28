@@ -1,0 +1,42 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateTweetUserTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('tweet_user', function (Blueprint $table) {
+            $table->id();
+            // « ‚±‚±‚©‚ç’Ç‰Á
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('tweet_id');
+            // my
+            $table->unsignedBigInteger('like')->default(0);
+            $table->unsignedBigInteger('dislike')->default(0);
+            // myo
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('tweet_id')->references('id')->on('tweets')->onDelete('cascade');
+            $table->unique(['user_id', 'tweet_id']);
+             // ª ‚±‚±‚Ü‚Å’Ç‰Á
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('tweet_user');
+    }
+}
