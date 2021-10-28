@@ -2,7 +2,7 @@
 
 function connect_to_db()
 {
-  $dbn = 'mysql:dbname=dec_todo;charset=utf8;port=3306;host=localhost';
+  $dbn = 'mysql:dbname=dec1_todo;charset=utf8;port=3306;host=localhost';
   $user = 'root';
   $pwd = '';
 

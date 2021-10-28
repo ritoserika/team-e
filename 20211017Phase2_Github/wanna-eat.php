@@ -7,8 +7,12 @@ if($random_number==1){
 $result='<a href="https://youtu.be/dbG7ISuUzJQ">ソロめしTV</a><div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dbG7ISuUzJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }elseif($random_number==2){
+<<<<<<< HEAD
     $result='<a href="https://youtu.be/Z_fnt5KJtTg">まるめし</a><div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_fnt5KJtTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+=======
+    $result='<a href="';
+>>>>>>> d1d5a8c0583c4bec8a23e9a984a91cc9c4035883
 }
 else if ($random_number==3){
     $result='<a href="https://youtu.be/YjhMa72OJn8">てりやきちゃんねる</a><div>
