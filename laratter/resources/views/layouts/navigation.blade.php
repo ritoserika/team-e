@@ -17,24 +17,7 @@
             {{ __('Dashboard') }}
           </x-nav-link>
         </div>
-        <!-- ↓一覧ページへのリンクを追加 -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')">
-            {{ __('Index') }}
-          </x-nav-link>
-        </div>
-        <!-- ↓作成ページへのリンクを追加 -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')">
-            {{ __('Create') }}           
-          </x-nav-link>
-        </div>
-        <!-- ↓マイページへのリンクを追加 -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('tweet.mypage')" :active="request()->routeIs('tweet.mypage')">
-            {{ __('Mypage') }}
-          </x-nav-link>
-        </div>
+        
         <!-- testリンクを追加（リンク先をDashboard2としてファイルをリソースに作成 -->
         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('dashboard2')" :active="request()->routeIs('dashboard2')">
@@ -57,18 +40,31 @@
         <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('makeup')" :active="request()->routeIs('makeup')">
-            {{ __('今日の気分‐メイクをしたい') }}
+            {{ __('メイクをしたい') }}
           </x-nav-link>
         </div>
 
         <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('sleep')" :active="request()->routeIs('sleep')">
-            {{ __('今日の気分‐寝たい') }}
+            {{ __('寝たい') }}
+          </x-nav-link>
+        </div>
+
+        <!-- ↓一覧ページへのリンクを追加 -->
+      <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')">
+            {{ __('Index') }}
+          </x-nav-link>
+      </div>
+
+      <!-- ↓マイページへのリンクを追加 -->
+      <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('tweet.mypage')" :active="request()->routeIs('tweet.mypage')">
+            {{ __('Mypage') }}
           </x-nav-link>
         </div>
     </div>
-
       <!-- Settings Dropdown -->
       <div class="hidden sm:flex sm:items-center sm:ml-6">
         <x-dropdown align="right" width="48">
