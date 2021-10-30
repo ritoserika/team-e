@@ -50,7 +50,7 @@ else if ($random_number==5){
   <p>気に入りましたか？</p>
   <button>
     <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')">
-            {{ __('お気に入り') }}
+            {{ __('お気に入り登録') }}
     </x-nav-link>
 　</button>
   </body<!DOCTYPE html>
