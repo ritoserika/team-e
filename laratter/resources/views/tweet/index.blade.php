@@ -3,7 +3,7 @@
 <x-app-layout>
   <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-      {{ __('Tweet Index') }}
+      {{ __('コメント一覧') }}
     </h2>
   </x-slot>
 
@@ -14,7 +14,7 @@
           <table class="text-center w-full border-collapse">
             <thead>
               <tr>
-                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-lg text-grey-dark border-b border-grey-light">tweet</th>
+                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-lg text-grey-dark border-b border-grey-light">コメント</th>
               </tr>
             </thead>
             <tbody>
@@ -24,9 +24,9 @@
                   <a href="{{ route('tweet.show',$tweet->id) }}">
                     <p class="text-left text-grey-dark">{{$tweet->user->name}}</p>
                     <h3 class="text-left font-bold text-lg text-grey-dark">{{$tweet->tweet}}</h3>
+                    <h3 class="text-left font-bold text-lg text-grey-dark">{{$tweet->description}}</h3>
                   </a>
                   <div class="flex">
-                    <!-- ↓追加 -->
                     <!-- favorite 状態で条件分岐 -->
                     @if($tweet->users()->where('user_id', Auth::id())->exists())
                     <!-- unfavorite ボタン -->

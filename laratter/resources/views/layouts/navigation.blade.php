@@ -20,7 +20,7 @@
         
         <!-- testリンクを追加（リンク先をDashboard2としてファイルをリソースに作成 -->
         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('dashboard2')" :active="request()->routeIs('dashboard2')">
+          <x-nav-link :href="route('food')" :active="request()->routeIs('food')">
             {{ __('おいしいものがたべたい') }}
           </x-nav-link>
         </div>
