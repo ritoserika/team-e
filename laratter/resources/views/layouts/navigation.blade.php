@@ -53,8 +53,20 @@
             {{ __(' お笑い') }}
           </x-nav-link>
         </div>
+        
+        <!-- Navigation Links -->
+      <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('makeup')" :active="request()->routeIs('makeup')">
+            {{ __('今日の気分‐メイクをしたい') }}
+          </x-nav-link>
+        </div>
 
-
+        <!-- Navigation Links -->
+      <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('sleep')" :active="request()->routeIs('sleep')">
+            {{ __('今日の気分‐寝たい') }}
+          </x-nav-link>
+        </div>
     </div>
 
       <!-- Settings Dropdown -->

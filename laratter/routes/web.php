@@ -63,5 +63,12 @@ Route::get('/smile', function () {
 })->middleware(['auth'])->name('smile');
 
 
+Route::get('/makeup', function () {
+  return view('makeup');
+})->middleware(['auth'])->name('makeup');
+
+Route::get('/sleep', function () {
+  return view('sleep');
+})->middleware(['auth'])->name('sleep');
 
 require __DIR__.'/auth.php';
