@@ -3,7 +3,7 @@
 <x-app-layout>
   <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-      {{ __('Show Tweet Detail') }}
+      {{ __('コメント一覧') }}
     </h2>
   </x-slot>
 
@@ -13,13 +13,13 @@
         <div class="p-6 bg-white border-b border-gray-200">
           <div class="mb-6">
             <div class="flex flex-col mb-4">
-              <p class="mb-2 uppercase font-bold text-lg text-grey-darkest">Tweet</p>
+              <p class="mb-2 uppercase font-bold text-lg text-grey-darkest">Youtuber名</p>
               <p class="py-2 px-3 text-grey-darkest" id="tweet">
                 {{$tweet->tweet}}
               </p>
             </div>
             <div class="flex flex-col mb-4">
-              <p class="mb-2 uppercase font-bold text-lg text-grey-darkest">Description</p>
+              <p class="mb-2 uppercase font-bold text-lg text-grey-darkest">コメント</p>
               <p class="py-2 px-3 text-grey-darkest" id="description">
                 {{$tweet->description}}
               </p>

@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                <?php
+<?php
 $random_number = rand(1,5);
 
 //乱数の値で条件分岐
@@ -32,30 +32,35 @@ if($random_number==1){
     }
     
     else if ($random_number==5){
-        $result='<a href="https://youtu.be/SxSN3OhPN44">macaroniマカロニ</a><div>
+        $result='<a href="https://youtu.be/SxSN3OhPN44">[macaroniマカロニ]</a><div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SxSN3OhPN44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     }
 ?>
 
 <!DOCTYPE html>
-<head>
+ <head>
   <meta charset="UTF-8">
   <meta http-variant_eqv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>document</title>
 </head>
-  </head>
   <body>
+<<<<<<< HEAD:laratter/resources/views/dashboard2.blade.php
     <h1>今日、あなたにおすすめするのは<?=$result?></h1>
     <p>気に入りましたか？</p>
   <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.index')">
             {{ __('お気に入り登録')}}
           </x-nav-link>
   </body>
-</html>
-                </div>
-            </div>
-        </div>
-    </div>
+=======
+  <h1>今日、あなたにおすすめするのは<?=$result?></h1>
+  <p>気に入りましたか？</p>
+  <button>
+    <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')">
+            {{ __('お気に入り登録') }}
+    </x-nav-link>
+　</button>
+  </body<!DOCTYPE html>
+>>>>>>> 2fd399bd2c37de2e11a018185e8b29ebbd6055e9:laratter/resources/views/food.blade.php
 </html>
 </x-app-layout>

@@ -46,13 +46,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/dashboard2', function () {
-  return view('dashboard2');
-})->middleware(['auth'])->name('dashboard2');
-
-Route::get('/dashboard3', function () {
-  return view('dashboard3');
-})->middleware(['auth'])->name('dashboard3');
+Route::get('/food', function () {
+  return view('food');
+})->middleware(['auth'])->name('food');
 
 Route::get('/training', function () {
   return view('training');
