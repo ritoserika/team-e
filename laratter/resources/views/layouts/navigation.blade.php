@@ -53,7 +53,6 @@
             {{ __(' お笑い') }}
           </x-nav-link>
         </div>
-        
         <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('makeup')" :active="request()->routeIs('makeup')">
@@ -67,6 +66,7 @@
             {{ __('今日の気分‐寝たい') }}
           </x-nav-link>
         </div>
+        
     </div>
 
       <!-- Settings Dropdown -->
@@ -135,9 +135,7 @@
         {{ __('Mypage') }}
       </x-responsive-nav-link>
     </div>
-  
-
-    <!-- Responsive Settings Options -->
+   <!-- Responsive Settings Options -->
     <div class="pt-4 pb-1 border-t border-gray-200">
       <div class="flex items-center px-4">
         <div class="flex-shrink-0">
