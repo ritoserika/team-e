@@ -54,4 +54,14 @@ Route::get('/dashboard3', function () {
   return view('dashboard3');
 })->middleware(['auth'])->name('dashboard3');
 
+Route::get('/training', function () {
+  return view('training');
+})->middleware(['auth'])->name('training');
+
+Route::get('/smile', function () {
+  return view('smile');
+})->middleware(['smile'])->name('smile');
+
+
+
 require __DIR__.'/auth.php';

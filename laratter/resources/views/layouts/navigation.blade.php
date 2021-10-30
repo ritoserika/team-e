@@ -47,6 +47,20 @@
             {{ __('今日の気分‐トレーニングしたい') }}
           </x-nav-link>
         </div>
+
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('training')" :active="request()->routeIs('training')">
+            {{ __('トレーニングしたい') }}
+          </x-nav-link>
+        </div>
+
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('smile')" :active="request()->routeIs('smile')">
+            {{ __(' お笑い') }}
+          </x-nav-link>
+        </div>
+
+
     </div>
 
       <!-- Settings Dropdown -->
