@@ -54,6 +54,15 @@ Route::get('/dashboard3', function () {
   return view('dashboard3');
 })->middleware(['auth'])->name('dashboard3');
 
+Route::get('/training', function () {
+  return view('training');
+})->middleware(['auth'])->name('training');
+
+Route::get('/smile', function () {
+  return view('smile');
+})->middleware(['auth'])->name('smile');
+
+
 Route::get('/makeup', function () {
   return view('makeup');
 })->middleware(['auth'])->name('makeup');

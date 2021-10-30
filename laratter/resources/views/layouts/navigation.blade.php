@@ -38,15 +38,22 @@
         <!-- testリンクを追加（リンク先をDashboard2としてファイルをリソースに作成 -->
         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('dashboard2')" :active="request()->routeIs('dashboard2')">
-            {{ __('今日の気分‐おいしいものがたべたい') }}
+            {{ __('おいしいものがたべたい') }}
           </x-nav-link>
         </div>
-          <!-- testリンクを追加（リンク先をDashboard3としてファイルをリソースに作成 -->
-          <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('dashboard3')" :active="request()->routeIs('dashboard3')">
-            {{ __('今日の気分‐トレーニングしたい') }}
+
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('training')" :active="request()->routeIs('training')">
+            {{ __('トレーニングしたい') }}
           </x-nav-link>
         </div>
+
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('smile')" :active="request()->routeIs('smile')">
+            {{ __(' お笑い') }}
+          </x-nav-link>
+        </div>
+        
         <!-- Navigation Links -->
       <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('makeup')" :active="request()->routeIs('makeup')">
