@@ -38,13 +38,7 @@
         <!-- testリンクを追加（リンク先をDashboard2としてファイルをリソースに作成 -->
         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
           <x-nav-link :href="route('dashboard2')" :active="request()->routeIs('dashboard2')">
-            {{ __('今日の気分‐おいしいものがたべたい') }}
-          </x-nav-link>
-        </div>
-          <!-- testリンクを追加（リンク先をDashboard3としてファイルをリソースに作成 -->
-          <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('dashboard3')" :active="request()->routeIs('dashboard3')">
-            {{ __('今日の気分‐トレーニングしたい') }}
+            {{ __('おいしいものがたべたい') }}
           </x-nav-link>
         </div>
 

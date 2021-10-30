@@ -60,7 +60,7 @@ Route::get('/training', function () {
 
 Route::get('/smile', function () {
   return view('smile');
-})->middleware(['smile'])->name('smile');
+})->middleware(['auth'])->name('smile');
 
 
 
